@@ -1,0 +1,62 @@
+String is a class in java that helps us manipulate combination of letters
+There are many useful methods to manipulate these combination of letters
+For example:
+isEmpty()=> checks if a string object contains any letters or not
+length()
+toUpperCase()
+toLowerCase()
+substring()
+Internal memory implementation of the string class
+Strings are immutable which means once a String object is created inside the computer
+memory we cannot change the value of that object
+If we try to change the value of String object a new object will be created and
+changes will be made to that new object
+But if we use the StringBuilder class no objects for the duplicate values will be scanned from
+the memory and always a new object will be created inside the memory
+
+When should we use String and StringBuilder?
+
+if we know that most of our variables will contain same values and memory consumption (and speed doesn't matter)
+is important then we should use String class. It saves a lot of memory but it can be slow because everytime we create
+a variable all of the existing String objects will be scanned.
+
+If speed is important and memory is not and if String objects contain different values
+then use StringBuilder
+
+==============================================================================================
+Types of Variables with respect to their scope.
+
+    In Java there are three types of variables
+    1)Local Variables
+    2)Instance Variables
+    3)Static Variables
+
+Local Variable:
+    The variables which are declared inside a method, constructor or any block of code like if conditions,
+    while loops, for loops, do while loops, switch statement
+    or anything inside a class that has a "{" and an ending "}"
+    or inside the parentheses like "(" and ")"
+
+    When to use local variable:
+        Always use local variables if it is possible.
+        They are very memory efficient
+        They are destroyed as soon as we are done executing the method,
+        but instance variables will stay in memory as long as the object is in use
+
+For example:
+void print(){
+String name="blablablabla"; //local variable
+}
+
+Instance Variables:
+    The variables which are declared inside a class but outside of a method, constructor or any block of code like
+    if conditions, while loops, for loops, do while loops, switch statement
+    or anything inside a class that has a "{" and an ending "}"
+    or inside the parentheses like "(" and ")"
+    instance variables can be accessed anywhere inside a class by directly calling them using their names
+    but we can not access them inside a static method (will explain later) by directly calling their names
+    but we can access them by creating an object of that class
+
+Static Variables:
+    Any instance variable declared with a static keyword is called a static variable;
+
