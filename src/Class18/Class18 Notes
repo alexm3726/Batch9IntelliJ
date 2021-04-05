@@ -1,0 +1,55 @@
+Types of variables:
+1) Local Variables
+    Any variable declared inside a method, constructor or any block of code like if
+    conditions loops and switches are called local variables
+
+    Advantages:
+        Memory Efficient
+    Disadvantages:
+        Very low accessibility
+
+
+2) Instance Variables
+    Variables declared inside a class and outside of any method constructor or
+    block of code are called instance variables
+
+    Advantages:
+        Can be accessed in all methods which are not static
+        Can be accessed by creating objects inside the static methods or in any other class
+    Disadvantages:
+        If not used properly it can waste a lot of unnecessary memory
+
+
+3)Static Variables
+    An instance variable declared with static keyword is called a static variable
+
+    Advantages:
+        Shared across all the instances of the class
+
+
+======================================================================================================
+
+Access Modifiers:
+Help access control the access to class properties/attributes and methods/behaviours
+There are for types of access modifiers
+private:
+    can only be accessed within the same class
+default:
+    Can only be accessed within the same package
+protected:
+    Can be accessed inside the child classes
+public:
+    If we write public keyword before any property or method that means it
+    can be accessed anywhere in our project
+
+Method Declaration
+    Access Modifiers (optional)
+    return type (not optional)
+    name of method (not optional)
+    () parameters are optional but parenthesis are not optional
+    {} (not optional)
+
+ Note:
+    Always try to make your properties private and then define methods to
+    change those properties, that way we will have more control over the
+    properties.
