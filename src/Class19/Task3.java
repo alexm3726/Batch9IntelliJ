@@ -18,7 +18,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        Task3 obj2=new Task3(90);
+       new Task3(90);
 
     }
 }

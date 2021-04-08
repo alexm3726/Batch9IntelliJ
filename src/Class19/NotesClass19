@@ -27,5 +27,14 @@ Constructor:
 
     Name fo the construct should be same as of our class.
 
+===============================================================================================
 
+-If we are in a separate class or if we are inside a static method in the same class
+    we need an object of the class if we want to access the instance members (fields, methods)
+-When we are declaring something the sequence does not matter
+    The sequence matters when we are calling something
 
+Constructor rules
+    -Same name as class name
+    -no return type(not even void)
+    -executes automatically during creating object
