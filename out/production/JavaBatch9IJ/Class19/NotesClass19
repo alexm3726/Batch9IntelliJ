@@ -1,0 +1,31 @@
+Recap:
+
+Access modifiers:
+    Keywords that control the access to class members( properties, methods, constructors,
+    inner classes, and interfaces)
+
+    private-
+        can only be accessed in the same class.
+    protected-
+        when we inherit from one class only available to the child
+    default(not a keyword)-
+        automatic behavior if nothing is specified. Can be accessed in the same class and
+        the same package
+    public-
+        Available to the entire project.
+==================================================================================================
+
+Constructor:
+    It is a special block of code that helps us initialize the fields, properties, or variables of a class.
+
+    class ABC{
+    ABC(){
+    }
+    }
+
+    Constructor declarations are very similar to methods' but without return types
+
+    Name fo the construct should be same as of our class.
+
+
+
