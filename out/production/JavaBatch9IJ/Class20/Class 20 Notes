@@ -1,0 +1,19 @@
+Recap:
+
+Constructor:
+    -Special block of code that helps us initialize the instance fields/properties/ variables/methods
+    -It is called automatically when we create an object of the class
+    -While defining Constructors we do not mention the return type not even void name
+    -Name of the constructor should be same as name of the class.
+
+this:
+    keyword used to show java we want to use current instance method or variable.
+
+this():
+    keyword with parenthesis to call the current class constructor
+    we use this to avoid code repetition.
+===================================================================
+
+Inheritance:
+    A mechanism/ process that we can use to inherit properties and
+    methods from another class to avoid code duplication.
