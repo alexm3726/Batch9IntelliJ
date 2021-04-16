@@ -1,0 +1,55 @@
+Recap
+    Overloading:
+        It is a mechanism that allows us to have methods with the same name but with different
+        number of parameters, different type of parameters or with different sequence of parameters
+
+        void hello(){
+        }
+
+        void hello(String name){
+        //overloading by changing the number of parameters
+        }
+
+        void hello(char[] name){
+        //overloading by changing the datatype of parameters
+        }
+        void hello(char[] name, String address){
+
+        }
+        void hello(String address, char[] name){
+        //overloading by changing the sequence of parameters
+        }
+
+       1- Rules we can overload methods in the same class
+       2- Name of the method should be same
+       3- cannot overload a method by changing return type
+       4- if we have an overloaded method Java will perform widening automatically when called
+       but it will not automatically do narrowing
+
+       void add(int a, int b){}
+       add(10,10) but not add(10.5,10.5) CE error
+
+        void add(double a, double b){}
+        add(10,10) and add(10.5,10.5) will have no issues
+
+        * If we are not sure about the number of arguments we can use var args to pass any number of parameters
+
+        aa(int ... numbers){
+
+        for(int number: numbers){
+        System.out.print(number)
+        }
+        }
+
+        * Access modifiers do not accept the method overloading in the same class
+        *We can overload the static method and the main method by following the
+        overloading rules
+
+Overriding:
+    When same method with same return type(this will matter***) and same signature exists in two classes
+    which have inheritance relationship
+
+    When we have same methods in the parent child classes with static modifier we say that we are hiding
+    a method by re-declaring it instead of overriding a method
+
+    Main method cannot be overridden.
