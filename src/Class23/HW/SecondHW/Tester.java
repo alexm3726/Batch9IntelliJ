@@ -4,13 +4,13 @@ public class Tester {
 
     public static void main(String[] args) {
 
-        CreditCard creditCard=new CreditCard();
+        CreditCard creditCard=new CreditCard(1000);
         creditCard.calculateInterest();
 
-        Visa visa=new Visa();
+        Visa visa=new Visa(1000);
         visa.calculateInterest();
 
-        AX ax=new AX();
+        AX ax=new AX(1000);
         ax.calculateInterest();
     }
 }

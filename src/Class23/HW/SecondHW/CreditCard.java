@@ -2,8 +2,12 @@ package Class23.HW.SecondHW;
 
 public class CreditCard {
 
-    double balance=1000;
+    double balance;
     double interest;
+
+    CreditCard(double balance){
+        this.balance=balance;
+    }
 
     void calculateInterest(){
 

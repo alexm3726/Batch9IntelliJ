@@ -4,12 +4,12 @@ public class Tester {
 
     public static void main(String[] args) {
         Degree degree=new Degree();
-        degree.getPrerequesite();
+        degree.getPrerequisite();
 
         Bachelors  bachelors=new Bachelors();
-        bachelors.getPrerequesite();
+        bachelors.getPrerequisite();
 
         Masters masters=new Masters();
-        masters.getPrerequesite();
+        masters.getPrerequisite();
     }
 }
