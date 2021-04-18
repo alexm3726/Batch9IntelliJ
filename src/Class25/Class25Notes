@@ -1,0 +1,32 @@
+MethodOverloading:
+    Method Overloading is a mechanism through which we can define same method multiple times in
+    the same class but with different signature(name of the method and its parameters) to write
+    cleaner code.
+
+Compiler:
+    *Checks for the syntax errors semantics
+    but not runtime errors or logical errors
+    *Java source code is converted to byte code
+    *JVM coverts the byte code to machine code and executes it
+    *To overload a method or a constructor we must have the same name but different
+    number of parameters or different type of parameters or diff sequence of parameters
+    *We can overload private and static methods
+    *We can overload constructor
+    *We can overload main method
+    *We cannot overload a method by changing the return type
+    *We overload methods in the same class
+    *We cannot overload by just changing the parameter names
+
+Overriding:
+
+    *Overriding is a mechanism in java through which parent and child classes can have the same
+    methods if child class does not like the implementation from the parent class child class
+    can provide its own implementation and depending upon the object type proper method will be
+    called
+
+    Rules:
+        *We cannot override private constructors because they do not participate in inheritance
+        *Static methods can not be overridden but we can re-declare them
+        *To override we should have an inheritance relationship
+        *The return type name and parameters of the method should be same
+        *We can not decrease the visibility but we can increase it

@@ -9,4 +9,3 @@ Recap
         *We can not decrease the visibility of a method being overwritten but we can increase
         *Static methods cannot be overridden but can be re-declared thus hiding the parent
         static method and it will behave the same as overridden
-        *
