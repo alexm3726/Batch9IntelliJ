@@ -1,0 +1,11 @@
+Final Keyword:
+
+    Final keyword in Java is used to show that something is complete and doesn't need any modification
+        *We can use the Final keyword with variables to indicate that the value of this variable is final
+        *We can use it with method to show that method implementation is final and it cannot be overridden
+        by child classes
+        *with classes so that no class can inherit from that class
+
+    Final with variables
+        *Always try to make your variables as final is possible(helps reduce bugs)
+        *widely used with static keyword
