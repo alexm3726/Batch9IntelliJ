@@ -1,0 +1,76 @@
+Recap:
+
+    Final Keyword:
+        *Final is a keyword in Java that belongs to no access modifiers.
+        *We can use final keyword with variables, methods, and classes.
+        *When used with variables we cannot change the contents of that variable.
+        *But if that variables points to an array or any other object we can change the contents of that array or object.
+
+    class A{
+    int number;
+    String name;
+
+    A(int number, String name){
+        this.number=number;
+        this.name=name;
+    }
+    public static void main(String[] args){
+
+        final A var1=new A(12345,"Bryan");
+        var1.number=100;
+        var1=new A(45678,"Alec");
+        int[] arr={123,145,456}
+
+        arr={100,58789};//CE because it is declared as final
+        arr[0]=789;
+    }
+    }
+
+    Final Keyword with methods:
+
+
+        class Parent{
+
+        final void printInfo(){
+        sout"from parent"
+        }
+        }
+
+        class Child extends from Parent{
+
+            @override
+            void printInfo(){
+            sout"from child" //CE cannot override a final method
+            }
+        }
+
+    Final Keyword with class:
+
+        final class ABC{
+        void method1(){
+
+        }
+        }
+
+        No class can extend this class
+        =================================================
+
+
+
+
+ABSTRACTION:
+
+4 Pillars of OOPS
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+
+Abstraction:
+    In Abstraction the internal details of the methods are hidden and we only expose
+    the signature of the method with return types
+
+    Rules:
+        We cannot create objects of the abstract classes why because the abstract classes
+        are incomplete
+
