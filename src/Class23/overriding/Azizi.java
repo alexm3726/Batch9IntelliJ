@@ -1,6 +1,6 @@
 package Class23.overriding;
 
-import org.openqa.selenium.json.JsonOutput;
+
 
 public class Azizi {
     void marry(){

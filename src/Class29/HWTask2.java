@@ -1,0 +1,82 @@
+package Class29;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class HWTask2 {
+    /*
+    1. Create an arraylist of cars and retrieve all the values using 3 different ways
+    2.Create an arrayList of words. Remove every word that ends with "e".
+    3. Create and arrayList of drinks. If any drink has letter "a" or "e" replace it with water.
+    4. Create an arrayList of even numbers from 1 to 50. Remove any number that is divisible by 5 from that arrayList
+     */
+
+    public static void main(String[] args) {
+        ArrayList<String> cars=new ArrayList<>(Arrays.asList("BMW","Mercedes","Honda"));
+        System.out.println(cars);
+        for (String car:cars
+             ) {
+            System.out.println(car);
+        }
+        System.out.println(cars.get(0)+","+cars.get(1)+","+cars.get(2));
+
+        System.out.println("===============================2nd part================================");
+
+        ArrayList<String> words=new ArrayList<>(Arrays.asList("Bacon","Begone","Bermuda","Bubble","Brown"));
+        System.out.println(words);
+        words.removeIf(word-> word.endsWith("e")||word.endsWith("a"));
+
+        /*for (String word: words
+             ) {
+            if(word.endsWith("e")){
+                words.remove(word);
+            }else if(word.endsWith("a")){
+                words.remove(word);
+            }
+        }*/
+       /* for (int i = 0; i < words.size(); i++) {
+            if(words.get(i).endsWith("e")){
+                words.remove(words.get(i));
+            }if(words.get(i).endsWith("a")){
+                words.remove(words.get(i));
+            }
+        }*/
+
+        System.out.println(words);
+
+        System.out.println("================================3rd part================================");
+
+
+        ArrayList<String> drinks=new ArrayList<>(Arrays.asList("tea","juice","milk","beer"));
+        System.out.println(drinks);
+        for (String drink:
+             drinks) {
+            if(drink.contains("e")||drink.contains("a")){
+                System.out.println(drink.replaceAll("e|a","water"));
+            }
+
+        }
+
+        System.out.println("==============================4th part====================================");
+        ArrayList<Integer> evenFrom1to50= new ArrayList<>(Arrays.asList(2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50));
+        System.out.println(evenFrom1to50);
+        evenFrom1to50.removeIf(newNum -> newNum % 5 == 0);
+        System.out.println(evenFrom1to50);
+
+
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
