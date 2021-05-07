@@ -1,8 +1,6 @@
 package Class29;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
+import java.util.*;
 
 public class HWTask2 {
     /*
@@ -25,7 +23,15 @@ public class HWTask2 {
 
         ArrayList<String> words=new ArrayList<>(Arrays.asList("Bacon","Begone","Bermuda","Bubble","Brown"));
         System.out.println(words);
-        words.removeIf(word-> word.endsWith("e")||word.endsWith("a"));
+        //words.removeIf(word-> word.endsWith("e")||word.endsWith("a"));
+        Iterator<String> iterator= words.iterator();
+        while (iterator.hasNext()){
+            String str= iterator.next();
+            if(str.endsWith("e")){
+                iterator.remove();
+            }
+
+        }
 
         /*for (String word: words
              ) {
@@ -50,18 +56,42 @@ public class HWTask2 {
 
         ArrayList<String> drinks=new ArrayList<>(Arrays.asList("tea","juice","milk","beer"));
         System.out.println(drinks);
-        for (String drink:
+
+       /* for (String drink:
              drinks) {
             if(drink.contains("e")||drink.contains("a")){
-                System.out.println(drink.replaceAll("e|a","water"));
+                drinks.set(drinks.indexOf(drink),"water" );
+                //System.out.println(drink.replaceAll("e|a","water"));
             }
 
+        }*/
+
+        for (int i = 0; i < drinks.size(); i++) {
+            if(drinks.get(i).contains("e")||drinks.get(i).contains("a")){
+                drinks.set(i,"water");
+            }
         }
 
+
+        System.out.println(drinks);
+
+
         System.out.println("==============================4th part====================================");
-        ArrayList<Integer> evenFrom1to50= new ArrayList<>(Arrays.asList(2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50));
+        List<Integer> evenFrom1to50= new LinkedList<>();
+        for (int i = 1; i <= 50; i++) {
+            if(i%2==0){
+                evenFrom1to50.add(i);
+            }
+        }
         System.out.println(evenFrom1to50);
-        evenFrom1to50.removeIf(newNum -> newNum % 5 == 0);
+        //evenFrom1to50.removeIf(newNum -> newNum % 5 == 0);
+        Iterator<Integer> nums= evenFrom1to50.iterator();
+        while (nums.hasNext()){
+            Integer num= nums.next();
+            if(num%5==0){
+                nums.remove();
+            }
+        }
         System.out.println(evenFrom1to50);
 
 
