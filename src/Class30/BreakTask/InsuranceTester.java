@@ -8,7 +8,9 @@ public class InsuranceTester {
         Car BMWM3= new Car("Geico","BMW M3");
         Car Honda= new Car("Prgressive","Civic");
         Car Tesla=new Car("AllState","TX341");
-        List<Insurance> objs= Arrays.asList(BMWM3,Honda,Tesla);
+        Pet dog0=new Pet("Petco","Dog");
+        Health senior0=new Health("Medicare");
+        List<Insurance> objs= Arrays.asList(BMWM3,Honda,Tesla, dog0, senior0);
         ArrayList<Insurance> cars=new ArrayList<>(objs);
         System.out.println(cars);
         for (Insurance car:
